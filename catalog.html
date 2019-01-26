@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+<head>
+  <meta charset="UTF-8">
+  <title>Барбершоп каталог</title>
+</head>
+<body>
+<header class="page__header base-header">
+  <nav class="base-nav">
+    <ul class="base-nav__site C">
+      <li class="base-nav__item"><a href="#">ИНФОРМАЦИЯ</a></li>
+      <li class="base-nav__item"><a href="#">НОВОСТИ</a></li>
+      <li class="base-nav__item"><a href="#">ПРАЙС-ЛИСТ</a></li>
+      <li class="base-nav__item base-nav__item--current"><a href="#">МАГАЗИН</a></li>
+      <li class="base-nav__item"><a href="#">КОНТАКТЫ</a></li>
+    </ul>
+    <ul class="base-nav__user user-nav">
+      <li class="user-nav__item"><a href="#">ВХОД</a></li>
+    </ul>
+    <a class="base-header__logo logo" href="index.html">
+      <img class="logo__image" src="#" alt="#">
+    </a>
+  </nav>
+</header>
+
+<main class="page__main base-main">
+  <h1 class="page__title">СРЕДСТВА ДЛЯ УХОДА</h1>
+  <ul class="base-main__breadcrumbs breadcrumbs-list">
+    <li class="breadcrumbs-list__item"><a class="breadcrumbs-list__link" href="#">ГЛАВНАЯ</a></li>
+    <li class="breadcrumbs-list__item"><a class="breadcrumbs-list__link" href="#">МАГАЗИН</a></li>
+    <li class="breadcrumbs-list__item"><a class="breadcrumbs-list__link--current" href="#">СРЕДСТВА ДЛЯ УХОДА</a></li>
+  </ul>
+
+  <section class="base-main__filters filters">
+    <h2 class="filters__title"></h2>
+    <form class="filters__form" method="get" action="#">
+      <fieldset>
+        <legend>ПРОИЗВОДИТЕЛИ:</legend>
+        <input type="checkbox" id="BaxterOfCalifornia">
+        <label for="BaxterOfCalifornia">Baxter of California</label>
+        <input type="checkbox" id="MrNatty">
+        <label for="MrNatty">Mr Natty</label>
+        <input type="checkbox" id="Suavecito">
+        <label for="Suavecito">Suavecito</label>
+        <input type="checkbox" id="MalinGoetz">
+        <label for="MalinGoetz">Malin+Goetz</label>
+        <input type="checkbox" id="Murrays">
+        <label for="Murrays">Murray’s</label>
+        <input type="checkbox" id="AmericanCrew">
+        <label for="AmericanCrew">American Crew</label>
+      </fieldset>
+      <fieldset>
+        <legend>ГРУППЫ ТОВАРОВ:</legend>
+        <input type="radio" id="shaving">
+        <label for="shaving">Бритвенные принадлежности</label>
+        <input type="radio" id="care">
+        <label for="care">Средства для ухода</label>
+        <input type="radio" id="accessories">
+        <label for="accessories">Аксессуары</label>
+      </fieldset>
+      <button type="submit">Показать</button>
+    </form>
+  </section>
+
+  <section class="base-main__catalog catalog">
+    <h2 class="catalog__title"></h2>
+    <ul class="catalog__list">
+      <li class="catalog__item product">
+        <h3 class="product__title">
+          <a class="product__title-link" href="catalog-item.html">
+            <span class="product__category">Набор для путешествий</span>
+            <span class="product__brand">«Baxter of California»</span>
+          </a>
+        </h3>
+        <a class="product__photo-link" href="catalog-item.html">
+          <img class="product__photo" src="#" alt="#">
+        </a>
+        <span class="product__price">2 900 ₽</span>
+        <a class="product__order-link">КУПИТЬ</a>
+      </li>
+
+      <li class="catalog__item product">
+        <h3 class="product__title">
+          <a class="product__title-link" href="catalog-item.html">
+            <span class="product__category">Увлажняющий кондиционер</span>
+            <span class="product__brand">«Baxter of California»</span>
+          </a>
+        </h3>
+        <a class="product__photo-link" href="catalog-item.html">
+          <img class="product__photo" src="#" alt="#">
+        </a>
+        <span class="product__price">750 ₽</span>
+        <a class="product__order-link">КУПИТЬ</a>
+      </li>
+
+      <li class="catalog__item product">
+        <h3 class="product__title">
+          <a class="product__title-link" href="catalog-item.html">
+            <span class="product__category">Гель для волос</span>
+            <span class="product__brand">«SUAVECITO»</span>
+          </a>
+        </h3>
+        <a class="product__photo-link" href="catalog-item.html">
+          <img class="product__photo" src="#" alt="#">
+        </a>
+        <span class="product__price">290 ₽</span>
+        <a class="product__order-link">КУПИТЬ</a>
+      </li>
+
+      <li class="catalog__item product">
+        <h3 class="product__title">
+          <a class="product__title-link" href="catalog-item.html">
+            <span class="product__category">Глина для укладки волос</span>
+            <span class="product__brand">«American crew»</span>
+          </a>
+        </h3>
+        <a class="product__photo-link" href="catalog-item.html">
+          <img class="product__photo" src="#" alt="#">
+        </a>
+        <span class="product__price">500 ₽</span>
+        <a class="product__order-link">КУПИТЬ</a>
+      </li>
+
+      <li class="catalog__item product">
+        <h3 class="product__title">
+          <a class="product__title-link" href="catalog-item.html">
+            <span class="product__category">Гель для волос</span>
+            <span class="product__brand">«AMERICAN CREW»</span>
+          </a>
+        </h3>
+        <a class="product__photo-link" href="catalog-item.html">
+          <img class="product__photo" src="#" alt="#">
+        </a>
+        <span class="product__price">300 ₽</span>
+        <a class="product__order-link">КУПИТЬ</a>
+      </li>
+
+      <li class="catalog__item product">
+        <h3 class="product__title">
+          <a class="product__title-link" href="catalog-item.html">
+            <span class="product__category">Набор для бритья</span>
+            <span class="product__brand">«Baxter of California»</span>
+          </a>
+        </h3>
+        <a class="product__photo-link" href="catalog-item.html">
+          <img class="product__photo" src="#" alt="#">
+        </a>
+        <span class="product__price">3 900 ₽</span>
+        <a class="product__order-link">КУПИТЬ</a>
+      </li>
+    </ul>
+
+    <ul class="catalog__pagination pagination-list">
+      <li class="pagination-list__item"><a href="#" class="pagination-list__link">1</a></li>
+      <li class="pagination-list__item"><a href="#" class="pagination-list__link pagination-list__link--current">2</a></li>
+      <li class="pagination-list__item"><a href="#" class="pagination-list__link">3</a></li>
+      <li class="pagination-list__item"><a href="#" class="pagination-list__link">4</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="page__footer base-footer">
+  <p class="base-footer__contacts">
+    БАРБЕРШОП «БОРОДИНСКИЙ»
+    АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8
+    <a href="#">КАК НАС НАЙТИ?</a>
+    ТЕЛЕФОН: +7 (495) 666-02-66
+  </p>
+
+  <div class="base-footer__social social-nav">
+    <b class="social-nav__slogan">ДАВАЙТЕ ДРУЖИТЬ!</b>
+    <ul>
+      <li><a class="social-nav__link" href="#">Вконтакте</a></li>
+      <li><a class="social-nav__link" href="#">Фейсбук</a></li>
+      <li><a class="social-nav__link" href="#">Инстаграм</a></li>
+    </ul>
+  </div>
+
+  <p class="base-footer__copyright copyright">
+    <b class="copyright__act">РАЗРАБОТАНО:</b>
+    <a class="copyright__company" href="#">html academy</a>
+  </p>
+</footer>
+
+<section class="page__login modal-login">
+  <h2 class="modal-login__title">ЛИЧНЫЙ КАБИНЕТ</h2>
+  <p class="modal-login__info">
+    Введите пожалуйста свой логин и пароль
+  </p>
+  <form class="modal-login__form" method="get" action="#">
+    <input class="modal-login__name" type="text" placeholder="ЛОГИН">
+    <input class="modal-login__password" type="password" placeholder="ПАРОЛЬ">
+    <input type="checkbox" id="modal-login__form-remember-me-checkbox">
+    <label class="modal-login__label" for="modal-login__form-remember-me-checkbox">ЗАПОМНИТЕ МЕНЯ</label>
+    <a class="modal-login__forget-link" href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
+    <button class="modal-login__submit" type="submit">ВОЙТИ</button>
+  </form>
+  <button class="modal-login__close" type="button">Закрыть</button>
+</section>
+</body>
+</html>

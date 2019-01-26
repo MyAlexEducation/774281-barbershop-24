@@ -1,12 +1,168 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Барбершоп</title>
-  </head>
-  <body>
+<html lang="ru" class="page">
+<head>
+  <meta charset="utf-8">
+  <title>Барбершоп</title>
+</head>
+<body>
+<header class="page__header base-header">
+  <nav class="base-nav">
+    <ul class="base-nav__site C">
+      <li class="base-nav__item"><a href="#">ИНФОРМАЦИЯ</a></li>
+      <li class="base-nav__item"><a href="#">НОВОСТИ</a></li>
+      <li class="base-nav__item"><a href="#">ПРАЙС-ЛИСТ</a></li>
+      <li class="base-nav__item"><a href="catalog.html">МАГАЗИН</a></li>
+      <li class="base-nav__item"><a href="#">КОНТАКТЫ</a></li>
+    </ul>
+    <ul class="base-nav__user user-nav">
+      <li class="user-nav__item"><a href="#">ВХОД</a></li>
+    </ul>
+    <a class="base-header__logo logo">
+      <img class="logo__image" src="#" alt="#">
+    </a>
+  </nav>
+</header>
+<main class="page__main base-main">
+  <h1 class="page__title">Барбершоп «Бородинский»</h1>
+  <section class="base-main__advantages advantages">
+    <h2 class="advantages__title">БЫСТРО</h2>
+    <ul class="advantages__list">
+      <li class="advantages__item advantage">
+        <h3 class="advantage__title">БЫСТРО</h3>
+        <p class="advantage__description">
+          МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ
+          НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ
+          СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!
+        </p>
+      </li>
+      <li class="advantages__item advantage">
+        <h3 class="advantage__title">КРУТО</h3>
+        <p class="advantage__description">
+          ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.
+          МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!
+          ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.
+        </p>
+      </li>
+      <li class="advantages__item advantage">
+        <h3 class="advantage__title">ДОРОГО</h3>
+        <p class="advantage__description">
+          НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ
+          МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА
+          НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?
+        </p>
+      </li>
+    </ul>
+  </section>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+  <section class="news">
+    <h2 class="news__title">НОВОСТИ</h2>
+    <ul class="news__list">
+      <li class="news__item">
+        <p class="news__text">
+          НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ
+          ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
+        </p>
+        <time class="news__time" datetime="2016-01-11">11 января</time>
+      </li>
+      <li class="news__item">
+        <p class="news__text">
+          В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА»
+          СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД
+          ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ
+        </p>
+        <time class="news__time" datetime="2016-01-18">18 января</time>
+      </li>
+    </ul>
+    <a class="news__to-all" href="#">ВСЕ НОВОСТИ</a>
+  </section>
 
-  </body>
+  <section class="gallery">
+    <h2 class="gallery__title">ФОТОГАЛЕРЕЯ</h2>
+    <img class="gallery__photo" src="#" alt="#">
+    <div class="gallery__buttons">
+      <button class="gallery__button" type="button">НАЗАД</button>
+      <button class="gallery__button" type="button">ВПЕРЕД</button>
+    </div>
+  </section>
+
+  <section class="contacts">
+    <h2 class="contacts__title">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+    <p class="contacts__info">
+      БАРБЕРШОП «БОРОДИНСКИЙ»
+      АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8
+      ТЕЛЕФОН: +7 (495) 666-02-66
+    </p>
+    <p class="contacts__info">
+      ВРЕМЯ РАБОТЫ:
+      ПН—ПТ: С 10:00 ДО 22:00
+      СБ—ВС: С 10:00 ДО 19:00
+    </p>
+    <a class="contacts__to-more-info" href="#">КАК ПРОЕХАТЬ</a>
+    <a class="contacts__feedback" href="#">ОБРАТНАЯ СВЯЗЬ</a>
+  </section>
+
+  <section class="appointment">
+    <h2 class="appointment__title">ЗАПИСАТЬСЯ</h2>
+    <p class="appointment__info">
+      УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ
+      СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
+    </p>
+    <form class="appointment__form" method="get" action="#">
+      <label>ДАТА</label>
+      <input class="appointment__text-input" type="text" placeholder="08.10.2017">
+      <label>ВРЕМЯ</label>
+      <input type="text" placeholder="10:00">
+      <label>ВАШЕ ИМЯ</label>
+      <input type="text" placeholder="Борода">
+      <label>ТЕЛЕФОН</label>
+      <input type="text" placeholder="+7 123 456-78-90">
+      <button class="appointment__submit" type="submit">ОТПРАВИТЬ</button>
+    </form>
+  </section>
+
+</main>
+<footer class="page__footer base-footer">
+  <p class="base-footer__contacts">
+    БАРБЕРШОП «БОРОДИНСКИЙ»
+    АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8
+    <a href="#">КАК НАС НАЙТИ?</a>
+    ТЕЛЕФОН: +7 (495) 666-02-66
+  </p>
+
+  <div class="base-footer__social social-nav">
+    <b class="social-nav__slogan">ДАВАЙТЕ ДРУЖИТЬ!</b>
+    <ul>
+      <li><a class="social-nav__link" href="#">Вконтакте</a></li>
+      <li><a class="social-nav__link" href="#">Фейсбук</a></li>
+      <li><a class="social-nav__link" href="#">Инстаграм</a></li>
+    </ul>
+  </div>
+
+  <p class="base-footer__copyright copyright">
+    <b class="copyright__act">РАЗРАБОТАНО:</b>
+    <a class="copyright__company" href="#">html academy</a>
+  </p>
+</footer>
+
+<section class="page__map modal-map">
+  <h2 class="modal-map__title">Мы тут:</h2>
+  <button class="modal-map__close" type="button">Закрыть</button>
+</section>
+
+<section class="page__login modal-login">
+  <h2 class="modal-login__title">ЛИЧНЫЙ КАБИНЕТ</h2>
+  <p class="modal-login__info">
+    Введите пожалуйста свой логин и пароль
+  </p>
+  <form class="modal-login__form" method="get" action="#">
+    <input class="modal-login__name" type="text" placeholder="ЛОГИН">
+    <input class="modal-login__password" type="password" placeholder="ПАРОЛЬ">
+    <input type="checkbox" id="modal-login__form-remember-me-checkbox">
+    <label class="modal-login__label" for="modal-login__form-remember-me-checkbox">ЗАПОМНИТЕ МЕНЯ</label>
+    <a class="modal-login__forget-link" href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
+    <button class="modal-login__submit" type="submit">ВОЙТИ</button>
+  </form>
+  <button class="modal-login__close" type="button">Закрыть</button>
+</section>
+</body>
 </html>

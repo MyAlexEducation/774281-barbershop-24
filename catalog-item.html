@@ -2,9 +2,117 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Барбершоп товар</title>
 </head>
 <body>
-$END$
+<header class="page__header base-header">
+  <nav class="base-nav">
+    <ul class="base-nav__site C">
+      <li class="base-nav__item"><a href="#">ИНФОРМАЦИЯ</a></li>
+      <li class="base-nav__item"><a href="#">НОВОСТИ</a></li>
+      <li class="base-nav__item"><a href="#">ПРАЙС-ЛИСТ</a></li>
+      <li class="base-nav__item base-nav__item--current"><a href="catalog.html">МАГАЗИН</a></li>
+      <li class="base-nav__item"><a href="#">КОНТАКТЫ</a></li>
+    </ul>
+    <ul class="base-nav__user user-nav">
+      <li class="user-nav__item"><a href="#">ВХОД</a></li>
+    </ul>
+    <a class="base-header__logo logo" href="index.html">
+      <img class="logo__image" src="#" alt="#">
+    </a>
+  </nav>
+</header>
+
+<main class="page__main base-main">
+  <h1 class="page__title">набор для путешествий «Baxter of California»</h1>
+  <ul class="base-main__breadcrumbs breadcrumbs-list">
+    <li class="breadcrumbs-list__item"><a class="breadcrumbs-list__link" href="#">ГЛАВНАЯ</a></li>
+    <li class="breadcrumbs-list__item"><a class="breadcrumbs-list__link" href="#">МАГАЗИН</a></li>
+    <li class="breadcrumbs-list__item"><a class="breadcrumbs-list__link" href="#">СРЕДСТВА ДЛЯ УХОДА</a></li>
+    <li class="breadcrumbs-list__item"><a class="breadcrumbs-list__link--current" href="#">набор для путешествий «Baxter of California»</a></li>
+  </ul>
+
+  <section class="product-photos">
+    <h2 class="product-photos__title">Фотографии товара</h2>
+    <ul class="product-photos__list">
+      <li class="product-photos__item">
+        <img class="product-photo product-photo--big" src="#" alt="#">
+      </li>
+      <li class="product-photos__item">
+        <img class="product-photo" src="#" alt="#">
+      </li>
+      <li class="product-photos__item">
+        <img class="product-photo" src="#" alt="#">
+      </li>
+      <li class="product-photos__item">
+        <img class="product-photo" src="#" alt="#">
+      </li>
+    </ul>
+  </section>
+
+  <section class="product-info">
+    <h2 class="product-info__title">Информация о товаре</h2>
+    <p class="product-info__availability">Есть в наличии</p>
+    <p class="product-info__article">Артикул: dexter-ae</p>
+    <p class="product-info__description">
+      Travel Kit – необходимый аксессуар во время любого путешествия.
+      В аккуратной кожаной сумке находится все, что нужно для бритья
+      и ухода за кожей во время рабочей поездки или отдыха: средство
+      для умывания, увлажняющий крем, крем для бритья, крем после бритья,
+      шампунь. Набор также может стать отличным подарком.
+    </p>
+    <p>
+      <span class="product-info__price">2 900 ₽</span>
+      <a class="product-info__buy-link" href="#">КУПИТЬ</a>
+    </p>
+    <h3 class="product-info__sub-title">В набор входят:</h3>
+    <ul product-info__set-list>
+      <li class="product-info__set-item">Средство для умывания (50 мл)</li>
+      <li class="product-info__set-item">Увлажняющий крем (50 мл)</li>
+      <li class="product-info__set-item">Крем для бритья (50 мл)</li>
+      <li class="product-info__set-item">Крем после бритья, шампунь (50 мл)</li>
+      <li class="product-info__set-item">Удобная кожаная косметичка</li>
+    </ul>
+  </section>
+</main>
+
+<footer class="page__footer base-footer">
+  <p class="base-footer__contacts">
+    БАРБЕРШОП «БОРОДИНСКИЙ»
+    АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8
+    <a href="#">КАК НАС НАЙТИ?</a>
+    ТЕЛЕФОН: +7 (495) 666-02-66
+  </p>
+
+  <div class="base-footer__social social-nav">
+    <b class="social-nav__slogan">ДАВАЙТЕ ДРУЖИТЬ!</b>
+    <ul>
+      <li><a class="social-nav__link" href="#">Вконтакте</a></li>
+      <li><a class="social-nav__link" href="#">Фейсбук</a></li>
+      <li><a class="social-nav__link" href="#">Инстаграм</a></li>
+    </ul>
+  </div>
+
+  <p class="base-footer__copyright copyright">
+    <b class="copyright__act">РАЗРАБОТАНО:</b>
+    <a class="copyright__company" href="#">html academy</a>
+  </p>
+</footer>
+
+<section class="page__login modal-login">
+  <h2 class="modal-login__title">ЛИЧНЫЙ КАБИНЕТ</h2>
+  <p class="modal-login__info">
+    Введите пожалуйста свой логин и пароль
+  </p>
+  <form class="modal-login__form" method="get" action="#">
+    <input class="modal-login__name" type="text" placeholder="ЛОГИН">
+    <input class="modal-login__password" type="password" placeholder="ПАРОЛЬ">
+    <input type="checkbox" id="modal-login__form-remember-me-checkbox">
+    <label class="modal-login__label" for="modal-login__form-remember-me-checkbox">ЗАПОМНИТЕ МЕНЯ</label>
+    <a class="modal-login__forget-link" href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
+    <button class="modal-login__submit" type="submit">ВОЙТИ</button>
+  </form>
+  <button class="modal-login__close" type="button">Закрыть</button>
+</section>
 </body>
 </html>
