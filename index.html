@@ -3,29 +3,32 @@
 <head>
   <meta charset="utf-8">
   <title>Барбершоп</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="page__header base-header">
   <nav class="base-nav">
-    <ul class="base-nav__site C">
-      <li class="base-nav__item"><a href="#">Информация</a></li>
-      <li class="base-nav__item"><a href="#">Новости</a></li>
-      <li class="base-nav__item"><a href="#">Прайс-лист</a></li>
-      <li class="base-nav__item"><a href="catalog.html">Магазин</a></li>
-      <li class="base-nav__item"><a href="#">Контакты</a></li>
+    <a class="base-header__logo logo">
+      <img class="logo__image" src="img/index-logo.svg" alt="индекс лого" width="371" height="155">
+    </a>
+    <ul class="base-nav__site site-nav">
+      <li class="site-nav__item"><a href="#">Информация</a></li>
+      <li class="site-nav__item"><a href="#">Новости</a></li>
+      <li class="site-nav__item"><a href="#">Прайс-лист</a></li>
+      <li class="site-nav__item"><a href="catalog.html">Магазин</a></li>
+      <li class="site-nav__item"><a href="#">Контакты</a></li>
     </ul>
     <ul class="base-nav__user user-nav">
       <li class="user-nav__item"><a href="#">Вход</a></li>
     </ul>
-    <a class="base-header__logo logo">
-      <img class="logo__image" src="img/index-logo.svg" alt="индекс лого" width="371" height="155">
-    </a>
   </nav>
 </header>
 <main class="page__main base-main">
   <h1 class="page__title">Барбершоп «Бородинский»</h1>
+
   <section class="base-main__advantages advantages">
-    <h2 class="advantages__title">Быстро</h2>
+    <h2 class="advantages__title">Преимущества</h2>
     <ul class="advantages__list">
       <li class="advantages__item advantage">
         <h3 class="advantage__title">Быстро</h3>
@@ -54,84 +57,90 @@
     </ul>
   </section>
 
-  <section class="news">
-    <h2 class="news__title">Новости</h2>
-    <ul class="news__list">
-      <li class="news__item">
-        <p class="news__text">
-          Нам наконец завезли ягермайстер! Теперь вы можете
-          пропустить стаканчик во время стрижки
-        </p>
-        <time class="news__time" datetime="2016-01-11">11 января</time>
-      </li>
-      <li class="news__item">
-        <p class="news__text">
-          В нашей команде пополнение, Борис «бритва»
-          стригунец, обладaтель множества титулов и наград
-          пополнил наши стройные ряды
-        </p>
-        <time class="news__time" datetime="2016-01-18">18 января</time>
-      </li>
-    </ul>
-    <a class="news__to-all" href="#">Все новости</a>
-  </section>
+  <div class="base-main__group wrapper">
+    <section class="news">
+      <h2 class="news__title">Новости</h2>
+      <ul class="news__list">
+        <li class="news__item">
+          <p class="news__text">
+            Нам наконец завезли ягермайстер! Теперь вы можете
+            пропустить стаканчик во время стрижки
+          </p>
+          <time class="news__time" datetime="2016-01-11">11 января</time>
+        </li>
+        <li class="news__item">
+          <p class="news__text">
+            В нашей команде пополнение, Борис «бритва»
+            стригунец, обладaтель множества титулов и наград
+            пополнил наши стройные ряды
+          </p>
+          <time class="news__time" datetime="2016-01-18">18 января</time>
+        </li>
+      </ul>
+      <a class="news__to-all" href="#">Все новости</a>
+    </section>
 
-  <section class="gallery">
-    <h2 class="gallery__title">Фотогалерея</h2>
-    <img class="gallery__photo" src="img/fotogalery.jpg" alt="барбершоп внутри" width="286" height="164">
-    <div class="gallery__buttons">
-      <button class="gallery__button" type="button">Назад</button>
-      <button class="gallery__button" type="button">Вперед</button>
-    </div>
-  </section>
+    <section class="gallery">
+      <h2 class="gallery__title">Фотогалерея</h2>
+      <a href="#" class="gallery__item">
+        <img class="gallery__photo" src="img/fotogalery.jpg" alt="барбершоп внутри" width="286" height="164">
+      </a>
+      <div class="gallery__buttons">
+        <button class="button" type="button">Назад</button>
+        <button class="button" type="button">Вперед</button>
+      </div>
+    </section>
+  </div>
 
-  <section class="contacts">
-    <h2 class="contacts__title">Контактная информация</h2>
-    <p class="contacts__info">
-      Барбершоп «бородинский»
-      адрес: г. Санкт-петербург, Б. Конюшенная, д. 19/8
-      телефон: +7 (495) 666-02-66
-    </p>
-    <p class="contacts__info">
-      Время работы:
-      пн—пт: с 10:00 до 22:00
-      сб—вс: с 10:00 до 19:00
-    </p>
-    <a class="contacts__to-more-info" href="#">Как проехать</a>
-    <a class="contacts__feedback" href="#">Обратная связь</a>
-  </section>
+  <div class="base-main__group wrapper">
+    <section class="contacts">
+      <h2 class="contacts__title">Контактная информация</h2>
+      <p class="contacts__info">
+        Барбершоп «бородинский»
+        адрес: г. Санкт-петербург, Б. Конюшенная, д. 19/8
+        телефон: +7 (495) 666-02-66
+      </p>
+      <p class="contacts__info">
+        Время работы:
+        пн—пт: с 10:00 до 22:00
+        сб—вс: с 10:00 до 19:00
+      </p>
+      <a class="contacts__to-more-info" href="#">Как проехать</a>
+      <a class="contacts__feedback" href="#">Обратная связь</a>
+    </section>
 
-  <section class="appointment">
-    <h2 class="appointment__title">Записаться</h2>
-    <p class="appointment__info">
-      Укажите желаемую дату и время и мы
-      свяжемся с вами для подтверждения брони
-    </p>
-    <form class="appointment__form" method="get" action="#">
-      <label>Дата</label>
-      <input class="appointment__text-input" type="text" placeholder="08.10.2017">
-      <label>Время</label>
-      <input type="text" placeholder="10:00">
-      <label>Ваше имя</label>
-      <input type="text" placeholder="Борода">
-      <label>Телефон</label>
-      <input type="text" placeholder="+7 123 456-78-90">
-      <button class="appointment__submit" type="submit">Отправить</button>
-    </form>
-  </section>
+    <section class="appointment">
+      <h2 class="appointment__title">Записаться</h2>
+      <p class="appointment__info">
+        Укажите желаемую дату и время и мы
+        свяжемся с вами для подтверждения брони
+      </p>
+      <form class="appointment__form" method="get" action="#">
+        <label>Дата</label>
+        <input class="appointment__text-input" type="text" placeholder="08.10.2017">
+        <label>Время</label>
+        <input class="appointment__text-input" type="text" placeholder="10:00">
+        <label>Ваше имя</label>
+        <input class="appointment__text-input" type="text" placeholder="Борода">
+        <label>Телефон</label>
+        <input class="appointment__text-input" type="text" placeholder="+7 123 456-78-90">
+        <button class="appointment__submit" type="submit">Отправить</button>
+      </form>
+    </section>
+  </div>
 
 </main>
 <footer class="page__footer base-footer">
   <p class="base-footer__contacts">
     Барбершоп «бородинский»
     адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-    <a href="#">Как нас найти?</a>
+    <a class="base-footer__link" href="#">Как нас найти?</a>
     Телефон: +7 (495) 666-02-66
   </p>
 
   <div class="base-footer__social social-nav">
     <b class="social-nav__slogan">Давайте дружить!</b>
-    <ul>
+    <ul class="social-nav__list">
       <li><a class="social-nav__link" href="#">Вконтакте</a></li>
       <li><a class="social-nav__link" href="#">Фейсбук</a></li>
       <li><a class="social-nav__link" href="#">Инстаграм</a></li>
@@ -140,7 +149,7 @@
 
   <p class="base-footer__copyright copyright">
     <b class="copyright__act">Разработано:</b>
-    <a class="copyright__company" href="#">html academy</a>
+    <a class="button copyright__button" href="#">html academy</a>
   </p>
 </footer>
 
@@ -156,11 +165,11 @@
     Введите пожалуйста свой логин и пароль
   </p>
   <form class="modal-login__form" method="get" action="#">
-    <input class="modal-login__name" type="text" placeholder="Логин">
-    <input class="modal-login__password" type="password" placeholder="Пароль">
-    <input type="checkbox" id="modal-login__form-remember-me-checkbox">
+    <input class="modal-login__input modal-login__input-name" type="text" placeholder="Логин">
+    <input class="modal-login__input modal-login__input-password" type="password" placeholder="Пароль">
+    <input class="modal-login__input modal-login__input-checkbox" type="checkbox" id="modal-login__form-remember-me-checkbox">
     <label class="modal-login__label" for="modal-login__form-remember-me-checkbox">Запомните меня</label>
-    <a class="modal-login__forget-link" href="#">Я забыл пароль!</a>
+    <a class="modal-login__restore" href="#">Я забыл пароль!</a>
     <button class="modal-login__submit" type="submit">Войти</button>
   </form>
   <button class="modal-login__close" type="button">Закрыть</button>

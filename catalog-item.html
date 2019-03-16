@@ -1,42 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page page--inner">
 <head>
-    <meta charset="UTF-8">
-    <title>Барбершоп товар</title>
+  <meta charset="UTF-8">
+  <title>Барбершоп товар</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="page__header base-header">
   <nav class="base-nav">
-    <ul class="base-nav__site C">
-      <li class="base-nav__item"><a href="#">Информация</a></li>
-      <li class="base-nav__item"><a href="#">Новости</a></li>
-      <li class="base-nav__item"><a href="#">Прайс-лист</a></li>
-      <li class="base-nav__item base-nav__item--current"><a href="catalog.html">Магазин</a></li>
-      <li class="base-nav__item"><a href="#">Контакты</a></li>
+    <a class="base-header__logo logo" href="index.html">
+      <img class="logo__image" src="img/index-logo.svg" alt="индекс лого" width="371" height="155">
+    </a>
+    <ul class="base-nav__site site-nav">
+      <li class="site-nav__item"><a href="#">Информация</a></li>
+      <li class="site-nav__item"><a href="#">Новости</a></li>
+      <li class="site-nav__item"><a href="#">Прайс-лист</a></li>
+      <li class="site-nav__item"><a href="#">Магазин</a></li>
+      <li class="site-nav__item"><a href="#">Контакты</a></li>
     </ul>
     <ul class="base-nav__user user-nav">
       <li class="user-nav__item"><a href="#">Вход</a></li>
     </ul>
-    <a class="base-header__logo logo" href="index.html">
-      <img class="logo__image" src="img/logo.svg" alt="логотип" width="111" height="24">
-    </a>
   </nav>
 </header>
 
 <main class="page__main base-main">
   <h1 class="page__title">Набор для путешествий «Baxter of California»</h1>
-  <ul class="base-main__breadcrumbs breadcrumbs-list">
-    <li class="breadcrumbs-list__item"><a class="breadcrumbs-list__link" href="#">Главная</a></li>
-    <li class="breadcrumbs-list__item"><a class="breadcrumbs-list__link" href="#">Магазин</a></li>
-    <li class="breadcrumbs-list__item"><a class="breadcrumbs-list__link" href="#">Средства для ухода</a></li>
-    <li class="breadcrumbs-list__item"><a class="breadcrumbs-list__link--current" href="#">Набор для путешествий «Baxter of California»</a></li>
+  <ul class="base-main__breadcrumbs breadcrumbs">
+    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Магазин</a></li>
+    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Средства для ухода</a></li>
+    <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link--current" href="#">Набор для путешествий «Baxter
+      of California»</a></li>
   </ul>
 
   <section class="product-photos">
     <h2 class="product-photos__title">Фотографии товара</h2>
     <ul class="product-photos__list">
       <li class="product-photos__item">
-        <img class="product-photo product-photo--big" src="img/big-product.jpg" alt="большая фотография" width="486" height="524">
+        <img class="product-photo product-photo--big" src="img/big-product.jpg" alt="большая фотография" width="486"
+             height="524">
       </li>
       <li class="product-photos__item">
         <img class="product-photo" src="img/small-product1.jpg" alt="миниатюра 1" width="166" height="175">
@@ -63,10 +67,10 @@
     </p>
     <p>
       <span class="product-info__price">2 900 ₽</span>
-      <a class="product-info__buy-link" href="#">Купить</a>
+      <a class="button product-info__buy-link" href="#">Купить</a>
     </p>
     <h3 class="product-info__sub-title">В набор входят:</h3>
-    <ul product-info__set-list>
+    <ul class="product-info__set-list">
       <li class="product-info__set-item">Средство для умывания (50 мл)</li>
       <li class="product-info__set-item">Увлажняющий крем (50 мл)</li>
       <li class="product-info__set-item">Крем для бритья (50 мл)</li>
@@ -78,15 +82,15 @@
 
 <footer class="page__footer base-footer">
   <p class="base-footer__contacts">
-    Барбершоп «БОРОДИНСКИЙ»
+    Барбершоп «бородинский»
     адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-    <a href="#">Как нас найти?</a>
+    <a class="base-footer__link" href="#">Как нас найти?</a>
     Телефон: +7 (495) 666-02-66
   </p>
 
   <div class="base-footer__social social-nav">
     <b class="social-nav__slogan">Давайте дружить!</b>
-    <ul>
+    <ul class="social-nav__list">
       <li><a class="social-nav__link" href="#">Вконтакте</a></li>
       <li><a class="social-nav__link" href="#">Фейсбук</a></li>
       <li><a class="social-nav__link" href="#">Инстаграм</a></li>
@@ -95,9 +99,15 @@
 
   <p class="base-footer__copyright copyright">
     <b class="copyright__act">Разработано:</b>
-    <a class="copyright__company" href="#">html academy</a>
+    <a class="button copyright__button" href="#">html academy</a>
   </p>
 </footer>
+
+<section class="page__map modal-map">
+  <h2 class="modal-map__title">Мы тут:</h2>
+  <img class="modal-map__image" src="img/map.jpg" alt="карта" width="766" height="560">
+  <button class="modal-map__close" type="button">Закрыть</button>
+</section>
 
 <section class="page__login modal-login">
   <h2 class="modal-login__title">Личный кабинет</h2>
@@ -105,11 +115,11 @@
     Введите пожалуйста свой логин и пароль
   </p>
   <form class="modal-login__form" method="get" action="#">
-    <input class="modal-login__name" type="text" placeholder="Логин">
-    <input class="modal-login__password" type="password" placeholder="Пароль">
-    <input type="checkbox" id="modal-login__form-remember-me-checkbox">
+    <input class="modal-login__input modal-login__input-name" type="text" placeholder="Логин">
+    <input class="modal-login__input modal-login__input-password" type="password" placeholder="Пароль">
+    <input class="modal-login__input modal-login__input-checkbox" type="checkbox" id="modal-login__form-remember-me-checkbox">
     <label class="modal-login__label" for="modal-login__form-remember-me-checkbox">Запомните меня</label>
-    <a class="modal-login__forget-link" href="#">Я забыл пароль!</a>
+    <a class="modal-login__restore" href="#">Я забыл пароль!</a>
     <button class="modal-login__submit" type="submit">Войти</button>
   </form>
   <button class="modal-login__close" type="button">Закрыть</button>

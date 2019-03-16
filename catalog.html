@@ -1,69 +1,71 @@
 <!DOCTYPE html>
-<html lang="ru" class="page">
+<html lang="ru" class="page page--inner">
 <head>
   <meta charset="UTF-8">
   <title>Барбершоп каталог</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="page__header base-header">
   <nav class="base-nav">
-    <ul class="base-nav__site C">
-      <li class="base-nav__item"><a href="#">Информация</a></li>
-      <li class="base-nav__item"><a href="#">Новости</a></li>
-      <li class="base-nav__item"><a href="#">Прайс-лист</a></li>
-      <li class="base-nav__item base-nav__item--current"><a href="#">Магазин</a></li>
-      <li class="base-nav__item"><a href="#">Контакты</a></li>
+    <a class="base-header__logo logo" href="index.html">
+      <img class="logo__image" src="img/index-logo.svg" alt="индекс лого" width="371" height="155">
+    </a>
+    <ul class="base-nav__site site-nav">
+      <li class="site-nav__item"><a href="#">Информация</a></li>
+      <li class="site-nav__item"><a href="#">Новости</a></li>
+      <li class="site-nav__item"><a href="#">Прайс-лист</a></li>
+      <li class="site-nav__item"><a href="#">Магазин</a></li>
+      <li class="site-nav__item"><a href="#">Контакты</a></li>
     </ul>
     <ul class="base-nav__user user-nav">
       <li class="user-nav__item"><a href="#">Вход</a></li>
     </ul>
-    <a class="base-header__logo logo" href="index.html">
-      <img class="logo__image" src="img/logo.svg" alt="логотип" width="111" height="24">
-    </a>
   </nav>
 </header>
 
 <main class="page__main base-main">
   <h1 class="page__title">Средства для ухода</h1>
-  <ul class="base-main__breadcrumbs breadcrumbs-list">
-    <li class="breadcrumbs-list__item"><a class="breadcrumbs-list__link" href="#">Главная</a></li>
-    <li class="breadcrumbs-list__item"><a class="breadcrumbs-list__link" href="#">Магазин</a></li>
-    <li class="breadcrumbs-list__item"><a class="breadcrumbs-list__link--current" href="#">Средства для ухода</a></li>
+  <ul class="base-main__breadcrumbs breadcrumbs">
+    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Магазин</a></li>
+    <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link--current" href="#">Средства для ухода</a></li>
   </ul>
 
   <section class="base-main__filters filters">
     <h2 class="filters__title"></h2>
     <form class="filters__form" method="get" action="#">
-      <fieldset>
-        <legend>Производители:</legend>
-        <input type="checkbox" id="BaxterOfCalifornia">
-        <label for="BaxterOfCalifornia">Baxter of California</label>
-        <input type="checkbox" id="MrNatty">
-        <label for="MrNatty">Mr Natty</label>
-        <input type="checkbox" id="Suavecito">
-        <label for="Suavecito">Suavecito</label>
-        <input type="checkbox" id="MalinGoetz">
-        <label for="MalinGoetz">Malin+Goetz</label>
-        <input type="checkbox" id="Murrays">
-        <label for="Murrays">Murray’s</label>
-        <input type="checkbox" id="AmericanCrew">
-        <label for="AmericanCrew">American Crew</label>
+      <fieldset class="filters__fieldset">
+        <legend class="filters__legend">Производители:</legend>
+        <input class="filters__input filters__input--checkbox" type="checkbox" id="BaxterOfCalifornia" disabled>
+        <label class="filters__label filters__label--checkbox" for="BaxterOfCalifornia">Baxter of California</label>
+        <input class="filters__input filters__input--checkbox" type="checkbox" id="MrNatty">
+        <label class="filters__label filters__label--checkbox" for="MrNatty">Mr Natty</label>
+        <input class="filters__input filters__input--checkbox" type="checkbox" id="Suavecito">
+        <label class="filters__label filters__label--checkbox" for="Suavecito">Suavecito</label>
+        <input class="filters__input filters__input--checkbox" type="checkbox" id="MalinGoetz">
+        <label class="filters__label filters__label--checkbox" for="MalinGoetz">Malin+Goetz</label>
+        <input class="filters__input filters__input--checkbox" type="checkbox" id="Murrays">
+        <label class="filters__label" for="Murrays">Murray’s</label>
+        <input class="filters__input filters__input--checkbox" type="checkbox" id="AmericanCrew">
+        <label class="filters__label filters__label--checkbox" for="AmericanCrew">American Crew</label>
       </fieldset>
-      <fieldset>
-        <legend>Группы товаров:</legend>
-        <input type="radio" id="shaving">
-        <label for="shaving">Бритвенные принадлежности</label>
-        <input type="radio" id="care">
-        <label for="care">Средства для ухода</label>
-        <input type="radio" id="accessories">
-        <label for="accessories">Аксессуары</label>
+      <fieldset class="filters__fieldset">
+        <legend class="filters__legend">Группы товаров:</legend>
+        <input class="filters__input filters__input--checkbox" type="radio" id="shaving">
+        <label class="filters__label filters__label--radio" for="shaving">Бритвенные принадлежности</label>
+        <input class="filters__input filters__input--checkbox" type="radio" id="care">
+        <label class="filters__label filters__label--radio" for="care">Средства для ухода</label>
+        <input class="filters__input filters__input--checkbox" type="radio" id="accessories">
+        <label class="filters__label filters__label--radio" for="accessories">Аксессуары</label>
       </fieldset>
-      <button type="submit">Показать</button>
+      <button class="button button--filters" type="submit">Показать</button>
     </form>
   </section>
 
   <section class="base-main__catalog catalog">
-    <h2 class="catalog__title"></h2>
+    <h2 class="catalog__title">Каталог</h2>
     <ul class="catalog__list">
       <li class="catalog__item product">
         <h3 class="product__title">
@@ -76,7 +78,7 @@
           <img class="product__photo" src="img/product1.jpg" alt="foto-product" width="220" height="165">
         </a>
         <span class="product__price">2 900 ₽</span>
-        <a class="product__order-link">Купить</a>
+        <a class="button product__order-link">Купить</a>
       </li>
 
       <li class="catalog__item product">
@@ -90,7 +92,7 @@
           <img class="product__photo" src="img/product2.jpg" alt="foto-product" width="220" height="165">
         </a>
         <span class="product__price">750 ₽</span>
-        <a class="product__order-link">Купить</a>
+        <a class="button product__order-link">Купить</a>
       </li>
 
       <li class="catalog__item product">
@@ -104,7 +106,7 @@
           <img class="product__photo" src="img/product3.jpg" alt="foto-product" width="220" height="165">
         </a>
         <span class="product__price">290 ₽</span>
-        <a class="product__order-link">Купить</a>
+        <a class="button product__order-link">Купить</a>
       </li>
 
       <li class="catalog__item product">
@@ -118,7 +120,7 @@
           <img class="product__photo" src="img/product4.jpg" alt="foto-product" width="220" height="165">
         </a>
         <span class="product__price">500 ₽</span>
-        <a class="product__order-link">Купить</a>
+        <a class="button product__order-link">Купить</a>
       </li>
 
       <li class="catalog__item product">
@@ -132,7 +134,7 @@
           <img class="product__photo" src="img/product5.jpg" alt="foto-product" width="220" height="165">
         </a>
         <span class="product__price">300 ₽</span>
-        <a class="product__order-link">Купить</a>
+        <a class="button product__order-link">Купить</a>
       </li>
 
       <li class="catalog__item product">
@@ -146,13 +148,14 @@
           <img class="product__photo" src="img/product6.jpg" alt="foto-product" width="220" height="165">
         </a>
         <span class="product__price">3 900 ₽</span>
-        <a class="product__order-link">Купить</a>
+        <a class="button button--product">Купить</a>
       </li>
     </ul>
 
     <ul class="catalog__pagination pagination-list">
       <li class="pagination-list__item"><a href="#" class="pagination-list__link">1</a></li>
-      <li class="pagination-list__item"><a href="#" class="pagination-list__link pagination-list__link--current">2</a></li>
+      <li class="pagination-list__item"><a class="pagination-list__link pagination-list__link--current">2</a>
+      </li>
       <li class="pagination-list__item"><a href="#" class="pagination-list__link">3</a></li>
       <li class="pagination-list__item"><a href="#" class="pagination-list__link">4</a></li>
     </ul>
@@ -161,15 +164,15 @@
 
 <footer class="page__footer base-footer">
   <p class="base-footer__contacts">
-    Барбершоп «БОРОДИНСКИЙ»
+    Барбершоп «бородинский»
     адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-    <a href="#">Как нас найти?</a>
+    <a class="base-footer__link" href="#">Как нас найти?</a>
     Телефон: +7 (495) 666-02-66
   </p>
 
   <div class="base-footer__social social-nav">
     <b class="social-nav__slogan">Давайте дружить!</b>
-    <ul>
+    <ul class="social-nav__list">
       <li><a class="social-nav__link" href="#">Вконтакте</a></li>
       <li><a class="social-nav__link" href="#">Фейсбук</a></li>
       <li><a class="social-nav__link" href="#">Инстаграм</a></li>
@@ -178,9 +181,15 @@
 
   <p class="base-footer__copyright copyright">
     <b class="copyright__act">Разработано:</b>
-    <a class="copyright__company" href="#">html academy</a>
+    <a class="button copyright__button" href="#">html academy</a>
   </p>
 </footer>
+
+<section class="page__map modal-map">
+  <h2 class="modal-map__title">Мы тут:</h2>
+  <img class="modal-map__image" src="img/map.jpg" alt="карта" width="766" height="560">
+  <button class="modal-map__close" type="button">Закрыть</button>
+</section>
 
 <section class="page__login modal-login">
   <h2 class="modal-login__title">Личный кабинет</h2>
@@ -188,11 +197,11 @@
     Введите пожалуйста свой логин и пароль
   </p>
   <form class="modal-login__form" method="get" action="#">
-    <input class="modal-login__name" type="text" placeholder="Логин">
-    <input class="modal-login__password" type="password" placeholder="Пароль">
-    <input type="checkbox" id="modal-login__form-remember-me-checkbox">
+    <input class="modal-login__input modal-login__input-name" type="text" placeholder="Логин">
+    <input class="modal-login__input modal-login__input-password" type="password" placeholder="Пароль">
+    <input class="modal-login__input modal-login__input-checkbox" type="checkbox" id="modal-login__form-remember-me-checkbox">
     <label class="modal-login__label" for="modal-login__form-remember-me-checkbox">Запомните меня</label>
-    <a class="modal-login__forget-link" href="#">Я забыл пароль!</a>
+    <a class="modal-login__restore" href="#">Я забыл пароль!</a>
     <button class="modal-login__submit" type="submit">Войти</button>
   </form>
   <button class="modal-login__close" type="button">Закрыть</button>
