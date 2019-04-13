@@ -8,23 +8,27 @@
 </head>
 <body>
 <header class="page__header base-header">
-  <nav class="base-nav">
-    <a class="base-header__logo logo">
+  <nav class="base-nav base-nav--background">
+    <div class="grid row">
+      <ul class="base-nav__site site-nav">
+        <li class="site-nav__item"><a href="#">Информация</a></li>
+        <li class="site-nav__item"><a href="#">Новости</a></li>
+        <li class="site-nav__item"><a href="#">Прайс-лист</a></li>
+        <li class="site-nav__item"><a href="catalog.html">Магазин</a></li>
+        <li class="site-nav__item"><a href="#">Контакты</a></li>
+      </ul>
+      <ul class="base-nav__user user-nav">
+        <li class="user-nav__item"><a href="#">Вход</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="base-header__logo logo">
+    <a class="logo__link">
       <img class="logo__image" src="img/index-logo.svg" alt="индекс лого" width="371" height="155">
     </a>
-    <ul class="base-nav__site site-nav">
-      <li class="site-nav__item"><a href="#">Информация</a></li>
-      <li class="site-nav__item"><a href="#">Новости</a></li>
-      <li class="site-nav__item"><a href="#">Прайс-лист</a></li>
-      <li class="site-nav__item"><a href="catalog.html">Магазин</a></li>
-      <li class="site-nav__item"><a href="#">Контакты</a></li>
-    </ul>
-    <ul class="base-nav__user user-nav">
-      <li class="user-nav__item"><a href="#">Вход</a></li>
-    </ul>
-  </nav>
+  </div>
 </header>
-<main class="page__main base-main">
+<main class="page__main base-main grid">
   <h1 class="page__title">Барбершоп «Бородинский»</h1>
 
   <section class="base-main__advantages advantages">
@@ -57,7 +61,7 @@
     </ul>
   </section>
 
-  <div class="base-main__group wrapper">
+  <div class="base-main__row row">
     <section class="news">
       <h2 class="news__title">Новости</h2>
       <ul class="news__list">
@@ -92,7 +96,7 @@
     </section>
   </div>
 
-  <div class="base-main__group wrapper">
+  <div class="base-main__row row">
     <section class="contacts">
       <h2 class="contacts__title">Контактная информация</h2>
       <p class="contacts__info">
@@ -124,33 +128,35 @@
         <input class="appointment__text-input" type="text" placeholder="Борода">
         <label>Телефон</label>
         <input class="appointment__text-input" type="text" placeholder="+7 123 456-78-90">
-        <button class="appointment__submit" type="submit">Отправить</button>
+        <button class="appointment__submit button" type="submit">Отправить</button>
       </form>
     </section>
   </div>
 
 </main>
 <footer class="page__footer base-footer">
-  <p class="base-footer__contacts">
-    Барбершоп «бородинский»
-    адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-    <a class="base-footer__link" href="#">Как нас найти?</a>
-    Телефон: +7 (495) 666-02-66
-  </p>
+  <div class="grid row">
+    <div class="base-footer__contacts">
+      Барбершоп «бородинский»<br>
+      адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+      <a class="base-footer__link" href="#">Как нас найти?</a><br>
+      Телефон: +7 (495) 666-02-66
+    </div>
 
-  <div class="base-footer__social social-nav">
-    <b class="social-nav__slogan">Давайте дружить!</b>
-    <ul class="social-nav__list">
-      <li><a class="social-nav__link" href="#">Вконтакте</a></li>
-      <li><a class="social-nav__link" href="#">Фейсбук</a></li>
-      <li><a class="social-nav__link" href="#">Инстаграм</a></li>
-    </ul>
+    <div class="base-footer__social social-nav">
+      <b class="social-nav__slogan">Давайте дружить!</b>
+      <ul class="social-nav__list">
+        <li><a class="social-nav__link" href="#">Вконтакте</a></li>
+        <li><a class="social-nav__link" href="#">Фейсбук</a></li>
+        <li><a class="social-nav__link" href="#">Инстаграм</a></li>
+      </ul>
+    </div>
+
+    <div class="base-footer__copyright copyright">
+      <b class="copyright__act">Разработано:</b>
+      <a class="button copyright__button" href="#">html academy</a>
+    </div>
   </div>
-
-  <p class="base-footer__copyright copyright">
-    <b class="copyright__act">Разработано:</b>
-    <a class="button copyright__button" href="#">html academy</a>
-  </p>
 </footer>
 
 <section class="page__map modal-map">
@@ -167,7 +173,8 @@
   <form class="modal-login__form" method="get" action="#">
     <input class="modal-login__input modal-login__input-name" type="text" placeholder="Логин">
     <input class="modal-login__input modal-login__input-password" type="password" placeholder="Пароль">
-    <input class="modal-login__input modal-login__input-checkbox" type="checkbox" id="modal-login__form-remember-me-checkbox">
+    <input class="modal-login__input modal-login__input-checkbox" type="checkbox"
+           id="modal-login__form-remember-me-checkbox">
     <label class="modal-login__label" for="modal-login__form-remember-me-checkbox">Запомните меня</label>
     <a class="modal-login__restore" href="#">Я забыл пароль!</a>
     <button class="modal-login__submit" type="submit">Войти</button>

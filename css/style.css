@@ -12,30 +12,16 @@
   font-weight: 700;
 }
 
-.page {
-  margin: 0;
-  padding: 0;
-
-  font-family: "PT Sans Narrow", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 1);
-  text-transform: uppercase;
-
-  background-color: rgba(0, 0, 0, 1);
-  background-image: url("../img/page-fon.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
-.page--inner {
-  color: rgba(0, 0, 0, 1);
+html {
+  box-sizing: border-box;
+}
 
-  background-color: rgba(248, 245, 242, 1);
-  background-image: url("../img/fon-main.png");
-  background-position: 0 0;
-  background-repeat: repeat;
+.content-box-component {
+  box-sizing: content-box;
 }
 
 a {
@@ -43,6 +29,7 @@ a {
 }
 
 .button {
+  display: block;
   font: inherit;
 
   text-align: center;
@@ -60,9 +47,62 @@ a {
   background-color: rgba(102, 61, 21, 1);
 }
 
+.grid {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.page {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.page--inner {
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(248, 245, 242, 1);
+}
+
+.page__header {
+  margin-bottom: 80px;
+}
+
+.page__main {
+  margin-bottom: 65px;
+}
+.page__main--catalog {
+  margin-bottom: 45px;
+}
+
+.page__title {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 30px;
+  line-height: 42px;
+}
+
 /**************HEADER***************/
 
 .base-nav {
+  margin-bottom: 60px;
   font-size: 16px;
   line-height: 20px;
   color: rgba(255, 255, 255, 1);
@@ -70,12 +110,29 @@ a {
   background-color: rgba(0, 0, 0, 1);
 }
 
+.base-nav--background::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1716px;
+  z-index: -1;
+  background-image: url("../img/page-fon.jpg");
+  background-position: center -30px;
+  background-repeat: no-repeat;
+}
+
 .site-nav {
+  display: flex;
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .site-nav a {
   color: rgba(255, 255, 255, 1);
+  display: block;
+  padding: 25px 20px;
 }
 
 .site-nav a:hover,
@@ -84,10 +141,15 @@ a {
 }
 
 .user-nav {
+  display: flex;
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .user-nav a {
+  display: block;
+  padding: 25px 20px;
   color: rgba(255, 255, 255, 1);
 }
 
@@ -96,13 +158,28 @@ a {
   background-color: rgba(36, 36, 36, 1);
 }
 
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo__link {
+  display: flex;
+  align-items: center;
+}
+
 /******************ADVANTAGES********************/
 
 .advantages__list {
+  display: flex;
+  justify-content: space-between;
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .advantage {
+  width: 300px;
   text-align: center;
 }
 
@@ -111,10 +188,14 @@ a {
   line-height: 42px;
 }
 
-/************************************/
+.base-main__advantages {
+  margin-bottom: 80px;
+}
 
-.base-main__group {
+.base-main__row {
   color: rgba(0, 0, 0, 1);
+  padding: 50px 80px;
+  margin-bottom: 35px;
 
   background-color: rgba(248, 245, 242, 1);
   background-image: url("../img/fon-main.png");
@@ -124,6 +205,10 @@ a {
 
 /**************NEWS********************/
 
+.news {
+  width: 380px;
+}
+
 .news__title {
   font-size: 30px;
   line-height: 42px;
@@ -131,6 +216,8 @@ a {
 
 .news__list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .news__time {
@@ -139,12 +226,16 @@ a {
 
 /****************GALLERY*****************/
 
+.gallery {
+  width: 300px;
+}
+
 .gallery__title {
   font-size: 30px;
   line-height: 42px;
 }
 
-.gallery__item {
+.gallery__photo {
   display: block;
   background-color: rgba(204, 204, 204, 1);
   border: 7px solid rgba(255, 255, 255, 1);
@@ -152,12 +243,21 @@ a {
 
 /************CONTACTS****************/
 
+.contacts {
+  width: 380px;
+}
+
 .contacts__title {
   font-size: 30px;
   line-height: 42px;
 }
 
 /***********APPOINTMENT***************/
+
+.appointment {
+  width: 300px;
+}
+
 .appointment__title {
   font-size: 30px;
   line-height: 42px;
@@ -177,6 +277,9 @@ a {
 /************FOOTER********************/
 
 .base-footer {
+  padding-top: 60px;
+  padding-bottom: 40px;
+
   color: rgba(255, 255, 255, 1);
 
   background-color: rgba(33, 33, 33, 1);
@@ -195,12 +298,19 @@ a {
   text-decoration: none;
 }
 
+.base-footer__contacts {
+  width: 320px;
+}
+
 .social-nav {
+  width: 140px;
   text-align: center;
 }
 
 .social-nav__list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .social-nav__link {
@@ -208,6 +318,8 @@ a {
 }
 
 .copyright {
+  width: 320px;
+  padding-left: 180px;
   text-align: center;
 }
 
@@ -273,13 +385,13 @@ a {
 
 /***************CATALOG*******************/
 
-.page-title {
-  font-size: 30px;
-  line-height: 42px;
-}
-
 .breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .breadcrumbs__link {
@@ -299,7 +411,13 @@ a {
 }
 
 .filters__fieldset {
+  padding: 0;
+  margin: 0;
   border: none;
+}
+
+.filters {
+  width: 220px;
 }
 
 .filters__legend {
@@ -308,6 +426,7 @@ a {
 }
 
 .filters__label {
+  display: block;
   line-height: 18px;
 }
 
@@ -320,13 +439,28 @@ a {
   color: rgba(0, 0, 0, 0.5);
 }
 
+.catalog {
+  width: 700px;
+}
+
 .catalog__list {
+  display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .product {
+  width: 220px;
+  margin-bottom: 20px;
+  margin-right: 20px;
   background-color: rgba(248, 248, 248, 1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.product:nth-child(3n) {
+  margin-right: 0;
 }
 
 .product:hover {
@@ -359,6 +493,9 @@ a {
 }
 
 .pagination-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
@@ -385,11 +522,21 @@ a {
 /*************CATALOG-ITEM***********************/
 
 .product-photos__list {
+  padding: 0;
+  margin: 0;
   list-style-type: none;
+}
+
+.product-photos {
+  width: 460px;
 }
 
 .product-photo {
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+  width: 390px;
 }
 
 .product-info__article {
